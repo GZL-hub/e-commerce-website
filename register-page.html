@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Login / Register </title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+
+    <body class="loginBody">
+<!-------- Navagation Links -------->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="mainpage.html"><img src="images/logotrans.png" width="125px"></a>
+                </div>
+            <nav>
+                <ul class="menuitems" id="MenuItems">
+                    <li><a href="mainpage.html">Home</a></li></i>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us-page.html">Contact Us</a></li>
+                    <li><a href="login-page.html">Account</a></li>
+                </ul>
+            </nav>
+                <a href=""><img src="images/cart1.png" width="25px" height="25px"></a>
+                <img src="images/menuicon.png" class="menu-icon" width="25px" height="30px" onclick="menutoggle()">
+        </div>
+
+<!-------- Login -------->
+        <div class="login-container">
+            <div class="form-box">
+                <form action="" name="Formfill" onsubmit="return Validation()">
+                <h2> Register </h2>
+                <p id="result"></p>
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>                    
+                    <input type="text" name="Username" placeholder="Username">
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>                
+                    <input type="text" name="Email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="Password" placeholder="Password">
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="cPassword" placeholder="Confirm Password">
+                </div>
+                <div class="loginbutton">
+                    <input type="submit" value="Register" class="future" onclick="Validation()">
+                </div>
+                <div class="group">
+                    <span><a class="forget-A" href=""> Forget Password </a></span>
+                    <span><a class="login-A" href="login-page.html"> Login </a></span>
+                </div>
+            </form>
+            </div>
+        </div>
+<!-------- Pop Up -------->
+        <div class="popup" id="popup">
+            <h2> Thank You!</h2>
+            <p> Your Account is registered.</p>
+            <a href=""><button onclick="CloseSlide()">OK</button></a>
+        </div>
+
+<!-- Validation -->
+        <script>
+            function Validation() {
+                if( document.Formfill.Username.value=="") {
+                    document.getElementById("result").innerHTML="Enter Username*";
+                    return false;
+                }
+                else if( document.Formfill.Username.value.length<6) {
+                    document.getElementById("result").innerHTML="At least six letter*";
+                    return false;
+                }
+                else if( document.Formfill.Email.value=="") {
+                    document.getElementById("result").innerHTML="Enter your Email";
+                     return false;
+                }
+                else if( document.Formfill.Password.value=="") {
+                    document.getElementById("result").innerHTML="Enter your Password";
+                    return false;
+                }
+                else if( document.Formfill.Password.value !== document.Formfill.cPassword.value) {
+                    document.getElementById("result").innerHTML="Password doesn't match";
+                    return false;
+                }
+                else if( document.Formfill.cPassword.value=="") {
+                    document.getElementById("result").innerHTML="Enter Confirm Password";
+                    return false;
+                }
+                else if( document.Formfill.Password.value.length<6) {
+                    document.getElementById("result").innerHTML="Password must be 6-digits";
+                    return false;
+                }
+                else if( document.Formfill.Password.value == document.Formfill.cPassword.value) {
+                    popup.classList.add("open-slide")
+                    return false;
+                }
+            }
+
+            var popup=document.getElementById('popup');
+            function CloseSlide() {
+                popup.classList.remove("open-slide")
+            }
+        </script>
+        
+<!-- JS for Toggle Menu -->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+                MenuItems.style.maxHeight = "0px";
+
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+                } else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+

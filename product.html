@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Products </title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <body>
+        <!-------- Navagation Links -------->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                <a href="mainpage.html"><img src="images/logotrans.png" width="125px"></a>
+                </div>
+             <nav>
+                <ul id="MenuItems">
+                    <li><a href="mainpage.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us-page.html">Contact Us</a></li>
+                    <li><a href="login-page.html">Account</a></li>
+                </ul>
+             </nav>
+                <a href=""><img src="images/cart1.png" width="25px" height="25px"></a>
+                <img src="images/menuicon.png" class="menu-icon" width="25px" height="30px" onclick="menutoggle()">
+            </div>
+
+        <!-- Collection Hero -->
+            <div class="collection-hero" id="collection-hero">
+                <div class="collection-item">
+                    <img src="images/fallcollection.jpg" alt="fallCollection">
+                    <div class="collection-text">
+                        <h2> Fall Collection 2023 </h2>
+                        <p> Get ready for new exclusive fall-season decors. <br> Cozy Autumn Decor Ideas for your home.  </p>
+                        <div class="collection-link">
+                            <a href="product.html">Shop Now </i></a>
+                        </div>
+                    </div>
+                    <button class="scroll-button" onclick="scrollToNextItem()"> <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+                <div class="collection-item">
+                    <img src="images/summer collection.webp" alt="summerCollection">
+                    <div class="collection-text">
+                        <h2> Summer Collection 2023 </h2>
+                        <p> Enjoy the essence of relaxation and outdoor living. <br> Made with solid hardwood to withstand heat </p>
+                        <div class="collection-link">
+                            <a href="product.html">Shop Now </i></a>
+                        </div>
+                    </div>
+                    <button class="scroll-button" onclick="scrollToNextItem()"> <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+                <div class="collection-item">
+                    <img src="images/Perfume Advertising Banner.png" alt="backgroundOffice">
+                    <div class="collection-text">
+                        <h2> Aura 2023 </h2>
+                        <p> Introducing our latest new launch. <br> Designed to resonate with your unique style. </p>
+                        <div class="collection-link">
+                            <a href="product.html">Shop Now </i></a>
+                        </div>
+                    </div>
+                    <button class="scroll-button" onclick="scrollToNextItem()"> <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+            </div>
+            
+        <!-- Product Page -->
+            <div class="product">
+                <h2 class="product-title"> Products </h2>
+            </div>
+
+        <!-- Table Section -->
+            <div class="table-section">
+                <h3> Tables </h2>
+            </div>
+            <div class="product-container">
+            <div class="product-card">
+                <img src="images/birchtable.avif" alt="birchtable">
+                <img class="hover-image" src="images/birchbackground.avif" alt="birchbackground">
+                <div class="product-content">
+                    <h4> Birch Wood Dining Table </h2>
+                    <p> $399 </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>                        
+                        (4)
+                    </div>
+                    <button class="button-product"> Add to  Cart </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/folding-dining-table.avif" alt="foldtable">
+                <img class="hover-image" src="images/folding-dining-background.avif" alt="foldbackground">
+                <div class="product-content">
+                    <h4> Foldable Dining Table </h2>
+                    <p> $199 </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        (1)
+                    </div>
+                    <button class="button-product"> Add to  Cart </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/round-dining-table.avif" alt="roundtable">
+                <img class="hover-image" src="images/round-table-back.avif" alt="roundbackground">
+                <div class="product-content">
+                    <h4> Round Dining Table </h2>
+                    <p> $499 </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>                    
+                        (9)
+                    </div>
+                    <button class="button-product"> Add to  Cart </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/thin-table.avif" alt="thin-table">
+                <img class="hover-image" src="images/thin-table-background.avif" alt="thin-table-background">
+                <div class="product-content">
+                    <h4> Light Wood Dining Table </h2>
+                    <p> $359 </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        (8)
+                    </div>
+                    <button class="button-product"> Add to  Cart </button>
+                </div>
+            </div>
+        </div>
+
+            <hr>
+
+        <!-- Wardrobe Section -->
+            <div class="table-section">
+                <h3> Wardrobes </h2>
+            </div>
+            <div class="product-container">
+            <div class="product-card">
+                <img src="images/wardrobe1.avif" alt="whitewardrobe">
+                <img class="hover-image" src="images/wardrobeBackground.avif" alt="whitewardrobebackground">
+                <div class="product-content">
+                    <h4> White Wardrobe </h2>
+                    <p> $1999 </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>                    
+                        (9)
+                    </div>
+                    <button class="button-product"> Add to  Cart </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/black-wardrobe.avif" alt="black-wardrobe">
+                <img class="hover-image" src="images/black-wardrobe-background.avif" alt="black-wardrobe-background">
+                <div class="product-content">
+                    <h4> Black Wardrobe </h2>
+                    <p> $2199 </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        (16)
+                    </div>
+                    <button class="button-product"> Add to  Cart </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/hardwood-wardrobe.avif" alt="hardwood-wardrobe">
+                <img class="hover-image" src="images/hardwood-wardrobe-background.avif" alt="hardwood-wardrobe-background">
+                <div class="product-content">
+                    <h4> Hardwood Wardrobe </h2>
+                    <p> $2299 </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        (3)
+                    </div>
+                    <button class="button-product"> Add to  Cart </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/combi-wardrobe.avif" alt="combi-wardrobe">
+                <img class="hover-image" src="images/combi-wardrobe-background.avif" alt="combi-wardrobe-background">
+                <div class="product-content">
+                    <h4> Combination Wardrobe </h2>
+                    <p> $359 </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>                    
+                        <i class="fa-regular fa-star"></i>                    
+                        (1)
+                    </div>
+                    <button class="button-product"> Add to  Cart </button>
+                </div>
+            </div>
+        </div>
+
+            <hr>
+
+        <!-- TV Bench Section -->
+            <div class="table-section">
+                <h3> TV Benches </h2>
+            </div>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="images/tv bench.avif" alt="birchtable">
+                    <img class="hover-image" src="images/tv-bench-background.avif" alt="tv-bench-background">
+                    <div class="product-content">
+                        <h4> Bamboo White TV Bench  </h2>
+                        <p> $390 </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            (2)
+                        </div>
+                        <button class="button-product"> Add to  Cart </button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/metalbench.avif" alt="foldtable">
+                <img class="hover-image" src="images/metalbench-background.avif" alt="foldbackground">
+                    <div class="product-content">
+                        <h4> Metal TV Bench </h2>
+                        <p> $599 </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            (4)
+                        </div>
+                        <button class="button-product"> Add to  Cart </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/rattanbench.avif" alt="roundtable">
+                    <img class="hover-image" src="images/rattanbenchbackground.avif" alt="roundbackground">
+                    <div class="product-content">
+                        <h4> Rattan TV Bench </h2>
+                        <p> $499 </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            (10)
+                        </div>
+                        <button class="button-product"> Add to  Cart </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/tvstorage.avif" alt="thin-table">
+                    <img class="hover-image" src="images/tvstoragebackground.avif" alt="thin-table-background">
+                    <div class="product-content">
+                        <h4> Metal TV Storage Combination </h2>
+                        <p> $999 </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            (11)
+                        </div>
+                        <button class="button-product"> Add to  Cart </button class="product-button">
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+
+        <!-------- Footer -------->
+        <div class="footer">
+            <div class="containers">
+            <div class="rowss">
+                <div class="footer-col-1">
+                    <h3>Download Our App <br> <br> </h3>
+                    <p> Download App for Android and IOS mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/googleplay2.png">
+                    <img src="images/applelogo.png">
+                </div>
+                </div>
+            <div class="footer-col-2">
+                <img src="images/logowhite.png">
+                <p> We believe in not just furnishing spaces but in shaping environments that resonate with your personality and lifestyle.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us <br> <br> </h3>
+                <ul>
+                    <li> Facebook </li>
+                    <li> Twitter </li>
+                    <li> Youtube </li>
+                    <li> Instagram </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"><br>Copyright &copy; 2023 - Octavia's Furnitures</p>
+        <p id="accessDate"></p>
+        </div>
+
+
+                
+        <!-- JS For Toggle Menu -->
+            <script>
+                var MenuItems = document.getElementById("MenuItems");
+                    MenuItems.style.maxHeight = "0px";
+    
+                function menutoggle() {
+                    if (MenuItems.style.maxHeight == "0px") {
+                        MenuItems.style.maxHeight = "200px";
+                    } else {
+                        MenuItems.style.maxHeight = "0px";
+                    }
+                }
+            </script>
+        
+        <!-- JS For Scroll Button -->
+        <script>
+            var collectionHero = document.getElementById('collection-hero');
+            var scrollAmount = 0;
+            
+            function scrollToNextItem() {
+                scrollAmount += collectionHero.scrollWidth / collectionHero.childElementCount;
+                if (scrollAmount >= collectionHero.scrollWidth) {
+                    scrollAmount = 0;
+                }
+                collectionHero.scrollTo({
+                    left: scrollAmount,
+                    behavior: "smooth"
+                });
+            }
+        </script>
+
+        <!-- JS For Accessed Date  -->
+        <script>
+            window.onload = function() {
+            var currentDate = new Date();
+            document.getElementById("accessDate").innerHTML = "Accessed on: " + currentDate;
+            }
+        </script>
+
+    </body>
+</html>
+
+
